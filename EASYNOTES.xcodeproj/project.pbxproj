@@ -16,6 +16,8 @@
 		60319F992711D52C002D45E8 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60319F962711D52A002D45E8 /* sound-tap.mp3 */; };
 		60319F9A2711D52C002D45E8 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60319F972711D52B002D45E8 /* sound-rise.mp3 */; };
 		60319F9B2711D52C002D45E8 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60319F982711D52C002D45E8 /* sound-ding.mp3 */; };
+		60319FA82711E7EB002D45E8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60319FA72711E7EB002D45E8 /* Constant.swift */; };
+		60DE23812712119D000D7AC6 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE23802712119D000D7AC6 /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		60319F962711D52A002D45E8 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		60319F972711D52B002D45E8 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		60319F982711D52C002D45E8 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		60319FA22711DEBB002D45E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		60319FA72711E7EB002D45E8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		60DE23802712119D000D7AC6 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +66,15 @@
 		60319F7E2711D2B1002D45E8 /* EASYNOTES */ = {
 			isa = PBXGroup;
 			children = (
-				60319F982711D52C002D45E8 /* sound-ding.mp3 */,
-				60319F972711D52B002D45E8 /* sound-rise.mp3 */,
-				60319F962711D52A002D45E8 /* sound-tap.mp3 */,
+				60319FA22711DEBB002D45E8 /* Info.plist */,
+				60319FA12711DE4B002D45E8 /* Model */,
+				60319F9D2711DE03002D45E8 /* View */,
+				60319FA02711DE24002D45E8 /* Style */,
+				60319F9F2711DE1B002D45E8 /* Utility */,
+				60319F9E2711DE0F002D45E8 /* Extension */,
+				60319F9C2711DDF2002D45E8 /* Sound */,
 				60319F7F2711D2B1002D45E8 /* EASYNOTESApp.swift */,
-				60319F812711D2B1002D45E8 /* ContentView.swift */,
 				60319F832711D2B2002D45E8 /* Assets.xcassets */,
-				60319F882711D2B2002D45E8 /* Persistence.swift */,
-				60319F8A2711D2B2002D45E8 /* EASYNOTES.xcdatamodeld */,
 				60319F852711D2B2002D45E8 /* Preview Content */,
 			);
 			path = EASYNOTES;
@@ -80,6 +86,56 @@
 				60319F862711D2B2002D45E8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		60319F9C2711DDF2002D45E8 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				60319F982711D52C002D45E8 /* sound-ding.mp3 */,
+				60319F972711D52B002D45E8 /* sound-rise.mp3 */,
+				60319F962711D52A002D45E8 /* sound-tap.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		60319F9D2711DE03002D45E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60319F812711D2B1002D45E8 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60319F9E2711DE0F002D45E8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				60DE23802712119D000D7AC6 /* HideKeyboardExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		60319F9F2711DE1B002D45E8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				60319FA72711E7EB002D45E8 /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		60319FA02711DE24002D45E8 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		60319FA12711DE4B002D45E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60319F882711D2B2002D45E8 /* Persistence.swift */,
+				60319F8A2711D2B2002D45E8 /* EASYNOTES.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +213,8 @@
 			files = (
 				60319F892711D2B2002D45E8 /* Persistence.swift in Sources */,
 				60319F8C2711D2B2002D45E8 /* EASYNOTES.xcdatamodeld in Sources */,
+				60DE23812712119D000D7AC6 /* HideKeyboardExtension.swift in Sources */,
+				60319FA82711E7EB002D45E8 /* Constant.swift in Sources */,
 				60319F822711D2B1002D45E8 /* ContentView.swift in Sources */,
 				60319F802711D2B1002D45E8 /* EASYNOTESApp.swift in Sources */,
 			);
@@ -292,9 +350,9 @@
 				DEVELOPMENT_TEAM = 7VL5533SK6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EASYNOTES/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -322,9 +380,9 @@
 				DEVELOPMENT_TEAM = 7VL5533SK6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EASYNOTES/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
