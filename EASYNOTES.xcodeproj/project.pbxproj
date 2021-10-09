@@ -18,6 +18,7 @@
 		60319F9B2711D52C002D45E8 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60319F982711D52C002D45E8 /* sound-ding.mp3 */; };
 		60319FA82711E7EB002D45E8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60319FA72711E7EB002D45E8 /* Constant.swift */; };
 		60DE23812712119D000D7AC6 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE23802712119D000D7AC6 /* HideKeyboardExtension.swift */; };
+		60DE23832712160F000D7AC6 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE23822712160F000D7AC6 /* BackgroundImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		60319FA22711DEBB002D45E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		60319FA72711E7EB002D45E8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		60DE23802712119D000D7AC6 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		60DE23822712160F000D7AC6 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				60319F812711D2B1002D45E8 /* ContentView.swift */,
+				60DE23822712160F000D7AC6 /* BackgroundImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60319F892711D2B2002D45E8 /* Persistence.swift in Sources */,
+				60DE23832712160F000D7AC6 /* BackgroundImageView.swift in Sources */,
 				60319F8C2711D2B2002D45E8 /* EASYNOTES.xcdatamodeld in Sources */,
 				60DE23812712119D000D7AC6 /* HideKeyboardExtension.swift in Sources */,
 				60319FA82711E7EB002D45E8 /* Constant.swift in Sources */,
