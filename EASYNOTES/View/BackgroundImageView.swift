@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BackgroundImageView: View {
     var body: some View {
-        Image("rocket")
+        Image("appleLogo")
             .resizable()
             .scaledToFill()
             .ignoresSafeArea(.all)

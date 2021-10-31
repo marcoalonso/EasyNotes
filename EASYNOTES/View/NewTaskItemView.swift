@@ -48,7 +48,7 @@ struct NewTaskItemView: View {
             Spacer()
             
             VStack(spacing: 16) {
-              TextField("New Task", text: $task)
+              TextField("Nueva tarea", text: $task)
                     .foregroundColor(.pink)
                     .font(.system(size: 24, weight: .bold, design: .rounded))
                     .padding()
@@ -60,7 +60,7 @@ struct NewTaskItemView: View {
                     addItem()
                 }, label: {
                     Spacer()
-                    Text("SAVE")
+                    Text("GUARDAR")
                         .font(.system(size: 24, weight: .bold, design: .rounded))
                     Spacer()
                 })

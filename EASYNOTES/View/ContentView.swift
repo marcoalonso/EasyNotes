@@ -50,7 +50,7 @@ struct ContentView: View {
                     
                     HStack(spacing: 10) {
                         //Title
-                        Text("Devote")
+                        Text("Pendientes")
                             .font(.system(.largeTitle, design: .rounded))
                             .fontWeight(.heavy)
                             .padding(.leading, 5)
@@ -85,7 +85,7 @@ struct ContentView: View {
                     }, label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size: 30, weight: .semibold, design: .rounded))
-                        Text("New Task")
+                        Text("Nuevo")
                             .font(.system(size: 25, weight: .bold, design: .rounded))
                     })
                         .foregroundColor(.white)
@@ -100,15 +100,7 @@ struct ContentView: View {
                     
                     List {
                         ForEach(items) { item in
-                            VStack(alignment: .leading) {
-                                Text(item.task ?? "")
-                                    .font(.headline)
-                                    .fontWeight(.bold)
-                                
-                                Text("Item at: \(item.timestamp!, formatter: itemFormatter)")
-                                    .font(.footnote)
-                                    .foregroundColor(.gray)
-                            }//: Vstack
+                            ListRowItemView(item: item)
                         }
                         .onDelete(perform: deleteItems)
                     }//: List
