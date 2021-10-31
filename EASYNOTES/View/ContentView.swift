@@ -12,6 +12,7 @@ struct ContentView: View {
     // MARK: - Property
     @State var task : String = ""
     @State private var showNewTaskItem: Bool = false
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
    
     
     // MARK: - Fetching Data
@@ -66,8 +67,9 @@ struct ContentView: View {
                         //AppearenceBtn
                         Button(action: {
                             //Toggle Appearance
+                            isDarkMode.toggle()
                         }, label: {
-                            Image(systemName: "moon.circle")
+                            Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
                                 .resizable()
                                 .frame(width: 25, height: 25)
                                 .font(.system(.title, design: .rounded))
